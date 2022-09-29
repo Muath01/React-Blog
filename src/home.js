@@ -1,35 +1,17 @@
 import { useState, useEffect } from "react";
 import { unstable_renderSubtreeIntoContainer } from "react-dom";
 import BlogList from "./bloglist";
+import useFetch from "./usefetch";
 
 const Home = () => {
 
-    const [blogs, setBlogs] = useState(null);
 
-
-    const [isPending, setIsPending] = useState(true)
-
-
-    
-    useEffect(() =>{
-        setTimeout(() => {
-        
-            fetch("http://localhost:8000/blogs")
-            .then(res =>{ 
-                return res.json()
-            })
-            .then((data)=>{
-                console.log(data)
-                setBlogs(data);
-                setIsPending(false);
-            })
-        }, 2000);
-    }, [])
-
+    const {data: blogs, isPending, error} = useFetch("http://localhost:8000/blogs")
 
     return (
       
       <div className="home">
+        {error && <div>{error}</div>}
         {isPending && <div>Loading...</div>}
         {blogs &&<BlogList blogs={blogs} title="All blogs" />}
       </div>
