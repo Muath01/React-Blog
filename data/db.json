@@ -1,16 +1,34 @@
 {
-    "blogs":[
-        {
-            "title": "My First Blog",
-            "body":"Why do we use it?\n It is a long established fact that a reader will be dsitrcated",
-            "autho":"mario",
-            "id":1
-        },
-        {
-            "title":"Opening parety",
-            "body":"pening paryt cohgjfdsakjh fkjlhdsfah jkashjdfs ",
-            "author":"Yoshi",
-            "id":2
-        }
-    ]
+  "blogs": [
+    {
+      "title": "Opening parety",
+      "body": "pening paryt cohgjfdsakjh fkjlhdsfah jkashjdfs ",
+      "author": "Yoshi",
+      "id": 2
+    },
+    {
+      "title": "sdffdssdf",
+      "body": "fdsfdssdf",
+      "author": "Yoshi",
+      "id": 3
+    },
+    {
+      "title": "dsaasd",
+      "body": "sda",
+      "author": "mario",
+      "id": 5
+    },
+    {
+      "title": "aaaaaa",
+      "body": "aaaaa",
+      "author": "mario",
+      "id": 6
+    },
+    {
+      "title": "adsads",
+      "body": "asd",
+      "author": "mario",
+      "id": 7
+    }
+  ]
 }
